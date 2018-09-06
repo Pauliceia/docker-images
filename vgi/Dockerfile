@@ -8,8 +8,7 @@ RUN apt-get update
 RUN apt-get install -qqy software-properties-common --no-install-recommends
 RUN apt-get update
 RUN apt-get install -y python-gdal python3-gdal gdal-bin
-
-COPY ./api .
+ENV TZ=America/Sao_Paulo
 
 EXPOSE 8888
 
